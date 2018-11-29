@@ -1,1 +1,1 @@
-/npmCommand.txt
+*.txt
