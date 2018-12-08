@@ -18,7 +18,7 @@ mongoose.connection.on('connected', () => {
 
 // On connection error
 mongoose.connection.on('error', (err) => {
-  console.log('Database error: ' + err);
+  console.log('Database connection error: ' + err);
 });
 
 const users = require('./routes/users');
@@ -32,10 +32,15 @@ app.use(cors());
 // Body Parser Middleware
 app.use(bodyParser.json());
 
+// Passport Middleware
+app.use(passport.initialize());
+app.use(passport.session());
+require('./config/passport.js')(passport);
+
 app.use('/users', users);
 
-// Set Static Folder
-app.use(express.static(path.join(__dirname, 'public')));
+// Sets Static Folder
+app.use(express.static(path.join(__dirname, 'static')));
 
 app.get('/', (req, res) => {
   res.end('Invalid endpoint!');

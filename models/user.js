@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 const config = require('../config/database.js');
 
-// Create a User schema
+// Creates a User schema
 const UserSchema = mongoose.Schema({
   name: {
     type: String
@@ -41,7 +41,7 @@ module.exports.addUser = function (newUser, callback) {
         if (hashErr) {
           console.log("Error occurred during hash(): " + hashErr);
         } else {
-          // Save the hash as the newUser's password
+          // Saves the hash as the newUser's password
           newUser.password = hash;
           newUser.save(callback);
         }
@@ -49,3 +49,12 @@ module.exports.addUser = function (newUser, callback) {
     }
   });
 };
+
+module.exports.comparePassword = function (formPass, hash, callback) {
+  bcrypt.compare(formPass, hash, (err, matches) => {
+    if (err) {
+      console.log("Error occurred during password comparisson: " + err);
+    }
+    callback(matches);
+  });
+}
