@@ -98,9 +98,9 @@ router.post('/authenticate', (req, res, next) => {
 Profile
 Endpoint --> /users/profile
 */
-router.get('/profile', (req, res, next) => {
-  res.send('PROFILE ENDPOINT.');
-  res.end();
+router.get('/profile', passport.authenticate('jwt', {session: false}), (req, res, next) => {
+  res.send(req.user);
+  //res.end();
 });
 
 module.exports = router;
