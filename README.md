@@ -12,7 +12,7 @@ An authenticaton web application using the MEAN Stack. Built from scratch.
 
 ## Visit the web app
 Deployed to the [heroku](https://www.heroku.com/) cloud platform.
-[Visit now!](https://meanath29.herokuapp.com)
+[Visit now!](https://meanauth29.herokuapp.com)
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
