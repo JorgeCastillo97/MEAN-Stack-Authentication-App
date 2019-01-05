@@ -23,8 +23,8 @@ mongoose.connection.on('error', (err) => {
 
 const users = require('./routes/users');
 
-// Port Number
-const PORT = 9000;
+// Port to heroku deployment
+const PORT = process.env.PORT || 8080;
 
 // CORS Middleware
 app.use(cors());
