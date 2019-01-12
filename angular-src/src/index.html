@@ -13,15 +13,19 @@
 <script>
   $(window).load(function() {
 		// Animate loader off screen
+    $("#footer").css("display", "table-row");
+    $("#footer").css("height", "1px");
+    $("#footer").css("text-align", "center");
+    $("#footer").css("color", "#2c3e50");
 		$(".se-pre-con").fadeOut("slow");
 	});
 </script>
 <body>
   <div class="se-pre-con"></div>
   <div class="wrapper">
-    <app-root>Loading...</app-root>
+    <app-root></app-root>
   </div>
-  <footer>
+  <footer id="footer" style="display: none">
     <div class="wrapper bg-dark">
       <p>Mongo DB, Express.js, Angular.js and Node.js in action</p>
     </div>

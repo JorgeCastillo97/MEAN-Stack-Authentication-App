@@ -35,7 +35,7 @@ exports = module.exports = __webpack_require__(681)();
 
 
 // module
-exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\nhtml, body {\n  margin: 0;\n  display: table;\n  height: 100%;\n  width: 100%;\n}\n\n.wraper {\n  height: auto;\n}\n\nfooter {\n  display: table-row;\n  height: 1px;\n  text-align: center;\n  color: #2c3e50;\n}\n\nfooter p {\n  margin: inherit;\n  padding: 2%;\n  font-weight: bolder;\n  font-size: 1.2rem;\n}\n\n/* Loader */\n.no-js #loader { display: none;  }\n.js #loader { display: block; position: absolute; left: 100px; top: 0; }\n.se-pre-con {\n\tposition: fixed;\n\tleft: 0px;\n\ttop: 0px;\n\twidth: 100%;\n\theight: 100%;\n\tz-index: 9999;\n\tbackground: url(" + __webpack_require__(734) + ") center no-repeat #fff;\n}\n", ""]);
+exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\nhtml, body {\n  margin: 0;\n  display: table;\n  height: 100%;\n  width: 100%;\n}\n\n.wraper {\n  height: auto;\n}\n\n/*footer {\n  display: table-row;\n  height: 1px;\n  text-align: center;\n  color: #2c3e50;\n}*/\n\nfooter p {\n  margin: inherit;\n  padding: 2%;\n  font-weight: bolder;\n  font-size: 1.2rem;\n}\n\n/* Loader */\n.no-js #loader { display: none;  }\n.js #loader { display: block; position: absolute; left: 100px; top: 0; }\n.se-pre-con {\n\tposition: fixed;\n\tleft: 0px;\n\ttop: 0px;\n\twidth: 100%;\n\theight: 100%;\n\tz-index: 9999;\n\tbackground: url(" + __webpack_require__(734) + ") center no-repeat #fff;\n}\n", ""]);
 
 // exports
 

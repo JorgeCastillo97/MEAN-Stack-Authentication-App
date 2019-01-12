@@ -10,12 +10,12 @@ html, body {
   height: auto;
 }
 
-footer {
+/*footer {
   display: table-row;
   height: 1px;
   text-align: center;
   color: #2c3e50;
-}
+}*/
 
 footer p {
   margin: inherit;
